@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<style type="text/css">
+	* {
+		font-family: "Helvetica";
+		background-color: #1A1A1A;
+		color: #FFFFFF;
+	}
+
+	ul {
+		list-style: none;
+
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+		display: inline-block;
+		padding-top: 10px;
+		padding-right: 15px;
+		padding-bottom: 10px;
+	}
+
+	ul li a:hover {
+		background: #0047B2;
+	}
+
+	ul li ul {
+		position: absolute;
+		background: #f2f2f2;
+		margin: 0;
+		padding-left: 0px;
+	}
+
+	ul li ul li { 
+		display: none;
+		margin: 0;
+	} 
+
+	/* ----THIS IS THE ONE THAT MAKES THE MENUS APPEAR---- */
+	/* ----IT ALSO EFFECTS THE LI SPACING ---- */
+	ul li:hover ul li {
+		display: block;
+		margin: 0; 
+		padding: 1px;
+		padding-left: 10px;
+	}
+
+	ul li ul:first-child {
+		padding-top: 125px; 
+	}
+
+
+
+</style>
+
+</head>
+<ul>
+	<li><a href="#">File
+		<ul class="file">
+			<li><a href="#">New</li>
+			<li><a href="#">Save</li>
+			<li><a href="#">Open</li>
+			<li><a href="#">Quit</li>
+		</ul>
+	</li>
+	<li><a href="#">Edit
+		<ul class="edit">
+			<li><a href="#">Copy</li>
+			<li><a href="#">Cut</li>
+			<li><a href="#">Paste</li>
+		</ul>
+	</li>
+	<li><a href="#">Select
+		<ul class="select">
+			<li><a href="#">Select All</li>
+			<li><a href="#">Deselect All</li>
+		</ul>
+	</li>
+	<li><a href="#">Find
+		<ul class="find">
+			<li><a href="#">Find Next</li>
+			<li><a href="#">Find Previous</li>
+			<li><a href="#">Replace</li>
+		</ul>
+	</li>
+	<li id="view"><a href="#">View
+		<ul class="view">
+			<li><a href="#">Window</li>
+			<li><a href="#">Toolbar</li>
+			<li><a href="#">Console</li>
+			<li><a href="#">Syntax</li>
+		</ul>
+	</li>
+	<li id="tools"><a href="#">Tools
+		<ul class="tools">
+			<li><a href="#">Plugins</li>
+			<li><a href="#">Build</li>
+		</ul>
+	</li>
+	<li id="help"><a href="#">Help
+		<ul class="help">
+			<li><a href="#">Search</li>
+			<li id="about"><a href="#">About...</li>
+		</ul>
+	</li>
+</ul>
+</html>
